@@ -1,0 +1,1 @@
+{"name":"chatgpt-navigator","version":"1.0.0","private":true,"scripts":{"test":"node --test test/unit/*.test.js","lint":"node scripts/check-syntax.js","test:e2e":"playwright test","test:all":"npm test && npm run lint && npm run test:e2e","build:test":"node scripts/build-test-extension.js"},"devDependencies":{"@playwright/test":"^1.55.0","jsdom":"^26.1.0"}}
