@@ -1,0 +1,1 @@
+const {defineConfig}=require("@playwright/test");module.exports=defineConfig({testDir:"./test/e2e",timeout:30000,reporter:[["list"],["html",{outputFolder:"test-results/html",open:"never"}]],use:{trace:"retain-on-failure"},webServer:{command:"node test/fixture-server.js",port:4173,reuseExistingServer:!process.env.CI}})
