@@ -1,0 +1,1 @@
+const http=require("http"),fs=require("fs"),path=require("path");const file=path.join(__dirname,"fixtures/conversation.html");http.createServer((req,res)=>{res.writeHead(200,{"content-type":"text/html"});res.end(fs.readFileSync(file));}).listen(4173,"127.0.0.1",()=>console.log("Fixture server on 4173"));
