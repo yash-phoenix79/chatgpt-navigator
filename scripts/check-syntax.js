@@ -1,0 +1,1 @@
+const fs=require("fs");for(const f of ["background.js","parser.js","classifier.js","content.js","sidepanel.js"]){try{new Function(fs.readFileSync(f,"utf8"));console.log("PASS",f)}catch(e){console.error("FAIL",f,e.message);process.exitCode=1}}
